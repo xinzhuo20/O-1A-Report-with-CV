@@ -8,14 +8,14 @@ You can run the code and upload the CV for a detailed analysis
 git clone https://github.com/xinzhuo20/O-1A-Report-with-CV.git
 ```
 
-3. Install packages with
+2. Install packages inside the folder O-1A-Report-with-CV with
 ```
 pip install -r requirements.txt
 ```
 
-5. Run the code
+3. Run the code
 ```
 uvicorn main:app --reload
 ```
 
-6. Open your browser at http://127.0.0.1:8000/docs to upload your file. You can see the results from the generated html file.
+4. Open your browser at http://127.0.0.1:8000/docs to upload your file. You can see the results from the generated html file.
