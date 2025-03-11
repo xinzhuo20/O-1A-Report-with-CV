@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>O-1A Visa Qualification Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        h2 { color: #666; }
+        .criteria { margin-bottom: 10px; }
+        .section { margin-top: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>O-1A Visa Qualification Report</h1>
+    <h2>Overall Rating: {{ overall_rating }}</h2>
+    
+    <div class="section">
+        <h3>Detailed Classification:</h3>
+        {% for label, score in classification.items() %}
+            <div class="criteria">
+                <strong>{{ label }}:</strong> {{ '%.2f'|format(score) }}
+            </div>
+        {% endfor %}
+    </div>
+    
+    <hr>
+    
+    <div class="section">
+        <h3>Extracted CV Text:</h3>
+        <pre>{{ cv_text }}</pre>
+    </div>
+</body>
+</html>
