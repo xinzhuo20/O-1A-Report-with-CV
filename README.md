@@ -18,4 +18,4 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-4. Open your browser at http://127.0.0.1:8000/docs to upload your file. You can see the results from the generated html file.
+4. Open your browser at http://127.0.0.1:8000/docs to upload your pdf file. You can see the results from the generated html file.
